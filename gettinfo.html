@@ -1,20 +1,155 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Gettinfo; for investors</title>
+  <title>Gettin'fo for investors</title>
+  <style>
+    h1{
+      text-align:center;
+      color:white;
+      font-size:45px;
+      padding: 20px;
+      border-bottom: 3px solid darkblue;
+      margin-bottom: 15px;
+      background-color: rgba(7,30,70,1);
+    }
+    span.fo{
+      color: rgba(204,51,0,1);
+    }
+    #grid1{
+      list-style:none;
+      padding:0;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      text-align: center;
+      padding-bottom:20px;
+      border-bottom: 3px solid darkblue;
+      font-weight: bold;
+    }
+    #grid1 a{
+      color:black;
+      text-decoration:underline;
+      font-size:20px;
+    }
+    #grid2{
+      display:grid;
+      grid-template-columns: 2fr 1fr;
+    }
+    #grid2 h2.vtitle{
+      padding-left:20px;
+    }
+    .title{
+      font-weight:800;
+    }
+    #grid3{
+      display:grid;
+      text-align: center;
+    }
+    #grid3 div{
+      padding:10px;
+    }
+    #gridvc1,#gridvc2,#gridvc3,#gridvc4,#gridvc5,#gridvc6{
+      display:grid;
+      grid-template-columns:1fr 1.3fr;
+    }
+    #gridvc1 h3,h4,h5,#gridvc2 h3,h4,h5,#gridvc3 h3,h4,h5,#gridvc4 h3,h4,h5,
+    #gridvc5 h3,h4,h5,#gridvc6 h3,h4,h5{
+      text-align:left;
+      margin:0;
+      padding-bottom:3px;
+    }
+    #gridvc1 .content,#gridvc2 .content,#gridvc3 .content,#gridvc4 .content,#gridvc5 .content,#gridvc6 .content{
+      padding-left:0;
+      text-align:left;
+    }
+    #gridvc1 .video,#gridvc2 .video,#gridvc3 .video,#gridvc4 .video,#gridvc5 .video,#gridvc6 .video{
+      padding-right:0;
+    }
+  </style>
 </head>
 <body>
-  <h1>Gettinfo</h1>
-  <ul>
-    <li><a href="koreanstock.html"> 국내주식 </a></li>
-    <li><a href="globalstock.html"> 해외주식 </a></li>
-    <li><a href="bitcoin.html"> 가상화폐 </a></li>
-    <li><a href="giftoption.html"> 선물옵션 </a></li>
+  <h1><span class="gettin">Gettin'</span><span class="fo">Fo</span></h1>
+  <ul id="grid1">
+      <li><a href="koreanstock.html"> 국내주식 </a></li>
+      <li><a href="globalstock.html"> 해외주식 </a></li>
+      <li><a href="bitcoin.html"> 가상화폐 </a></li>
+      <li><a href="giftoption.html"> 선물옵션 </a></li>
   </ul>
-  <p><h2>오늘의 추천 Video<h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/k1r8KL2q0JQ"
-    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </p>
+
+  <div id="grid2">
+    <div>
+      <div class="title"><h2>오늘의 추천 Video</h2></div>
+      <iframe width="1440" height="810" src="https://www.youtube.com/embed/k1r8KL2q0JQ"
+      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <h2 class="vtitle">The 7 TOP Stocks TO Buy in May 2021 (High Growth)</h2>
+    </div>
+    <div id="grid3">
+      <h2 class="playlists" >Playlists</h2>
+      <div id="gridvc1">
+        <div class="video">
+          <iframe width="208" height="117" src="https://www.youtube.com/embed/4Ynu-pq5DYM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="content">
+          <!-- 일정 글자수 넘어가면 자동으로 ... 나오게 하는 기능 추가 && 오른쪽 영상들은 썸네일 이미지로 불러오기 -->
+          <h3>대머리 아저씨가 나와서...</h3>
+          <h4> 대머리 유튜브</h4>
+          <h5>조회수 22만회 • 5시간 전</h5>
+        </div>
+      </div>
+      <div id="gridvc2">
+        <div class="video">
+        <iframe width="208" height="117" src="https://www.youtube.com/embed/R4IjFe_Ge08" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="content">
+          <h3>대머리 아저씨가 나와서...</h3>
+          <h4> 대머리 유튜브</h4>
+          <h5>조회수 22만회 • 5시간 전</h5>
+        </div>
+      </div>
+      <div id="gridvc3">
+        <div class="video">
+        <iframe width="208" height="117" src="https://www.youtube.com/embed/dFAiChOmoGI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="content">
+          <h3>대머리 아저씨가 나와서...</h3>
+          <h4> 대머리 유튜브</h4>
+          <h5>조회수 22만회 • 5시간 전</h5>
+        </div>
+      </div>
+      <div id="gridvc4">
+        <div class="video">
+        <iframe width="208" height="117" src="https://www.youtube.com/embed/bluUxKIB4pA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="content">
+          <h3>대머리 아저씨가 나와서...</h3>
+          <h4> 대머리 유튜브</h4>
+          <h5>조회수 22만회 • 5시간 전</h5>
+        </div>
+      </div>
+      <div id="gridvc5">
+        <div class="video">
+        <iframe width="208" height="117" src="https://www.youtube.com/embed/ogbRyjeU1IQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="content">
+          <h3>대머리 아저씨가 나와서...</h3>
+          <h4> 대머리 유튜브</h4>
+          <h5>조회수 22만회 • 5시간 전</h5>
+        </div>
+      </div>
+      <div id="gridvc6">
+        <div class="video">
+        <iframe width="208" height="117" src="https://www.youtube.com/embed/_HG3mgsazL4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="content">
+          <h3>대머리 아저씨가 나와서...</h3>
+          <h4> 대머리 유튜브</h4>
+          <h5>조회수 22만회 • 5시간 전</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
 
 
 
