@@ -37,6 +37,10 @@
     #grid2 h2.vtitle{
       padding-left:20px;
     }
+    #grida{
+      display:grid;
+      grid-template-rows: 0.1066fr 0.7868fr 0.1066fr;
+    }
     .title{
       font-weight:800;
     }
@@ -77,12 +81,13 @@
   </ul>
 
   <div id="grid2">
-    <div>
-      <div class="title"><h2>오늘의 추천 Video</h2></div>
-      <iframe width="100%" height="80%" src="https://www.youtube.com/embed/k1r8KL2q0JQ"
+    <div id="grida">
+    <div class="title"><h2>오늘의 추천 Video</h2></div>
+    <div class="mainvideo"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/k1r8KL2q0JQ"
       title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <h2 class="vtitle">The 7 TOP Stocks TO Buy in May 2021 (High Growth)</h2>
     </div>
+    <div><h2 class="vtitle">The 7 TOP Stocks TO Buy in May 2021 (High Growth)</h2></div>
+  </div>
     <div id="grid3">
       <h2 class="playlists" >Playlists</h2>
       <div id="gridvc1">
