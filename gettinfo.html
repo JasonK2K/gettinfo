@@ -37,6 +37,7 @@
     #grid2 h2.vtitle{
       padding-left:20px;
     }
+
     #grida{
       display:grid;
       grid-template-rows: 0.1066fr 0.7868fr 0.1066fr;
@@ -49,8 +50,8 @@
       text-align: center;
     }
     #grid3 div{
-      padding:10px;
-      padding-bottom:5px;
+      padding:2.5%;
+      padding-bottom:1%;
     }
     #gridvc1,#gridvc2,#gridvc3,#gridvc4,#gridvc5,#gridvc6{
       display:grid;
@@ -68,6 +69,34 @@
     }
     #gridvc1 .video,#gridvc2 .video,#gridvc3 .video,#gridvc4 .video,#gridvc5 .video,#gridvc6 .video{
       padding-right:3;
+    }
+    @media(max-width:1000px){
+      #grid2{
+        display:block;
+      }
+      #grid2 #grida{
+        display:block;
+      }
+      #grid2 #grida .mainvideo{
+        display:block;
+      }
+      #grid2 #grid3{
+        display:block;
+      }
+      #grid2 #grid3 h2{
+        margin:10;
+      }
+      #grid2 #grid3 div{
+        padding:1%;
+      }
+      #gridvc1,#gridvc2,#gridvc3,#gridvc4,#gridvc5,#gridvc6{
+        display:grid;
+        grid-template-columns:1.3fr 1fr;
+      }
+      #grid3 #gridvc1 .video,.content,#grid3 #gridvc2 .video,.content,#grid3 #gridvc3 .video,.content,#grid3 #gridvc4 .video,.content
+      ,#grid3 #gridvc5 .video,.content,#grid3 #gridvc6 .video,.content{
+        display:inline;
+      }
     }
   </style>
 </head>
